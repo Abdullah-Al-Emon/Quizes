@@ -1,14 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div className='flex justify-between px-20 py-4 shadow-lg'>
             <h1 className='text-3xl font-semibold text-blue-400'>Quizzes</h1>
             <div className='flex text-[16px]'>
-                <p><Link to='home' className='mr-8 font-[500]'>Home</Link></p>
-                <p><Link to='statistics' className='mr-8 font-[500]'>Statistics</Link></p>
-                <p><Link to='blog' className='mr-8 font-[500]'>Blog</Link></p>
+                <p><NavLink 
+                to='home' 
+                className={({ isActive }) =>
+                  isActive
+                    ? 'font-medium tracking-wide mr-8 text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium tracking-wide mr-8 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                }
+                >Home</NavLink></p>
+                <p><NavLink 
+                to='statistics' 
+                className={({ isActive }) =>
+                  isActive
+                    ? 'font-medium tracking-wide mr-8 text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium tracking-wide mr-8 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                }
+                >Statistics</NavLink></p>
+                <p><NavLink 
+                to='blog' 
+                className={({ isActive }) =>
+                  isActive
+                    ? 'font-medium tracking-wide mr-8 text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                    : 'font-medium tracking-wide mr-8 text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                }
+                >Blog</NavLink></p>
             </div>
         </div>
     );
