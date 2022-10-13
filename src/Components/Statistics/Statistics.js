@@ -8,7 +8,7 @@ const Statistics = () => {
     return (
         <div>
             <h2 className='font-semibold mt-5 text-blue-400 text-2xl'>This Quiz Total</h2>
-            <div className='lg:mx-56 lg:block hidden mt-8 mb-10'>
+            <div className='lg:flex justify-center items-center hidden mt-8 mb-10'>
             <LineChart
                     className='chart'
                     width={700}
@@ -24,7 +24,7 @@ const Statistics = () => {
                 </LineChart>
                 
             </div >
-            <div className='md:mx-28 md:block  lg:hidden hidden mt-8 mb-10'>
+            <div className='md:flex justify-center items-center  lg:hidden hidden mt-8 mb-10'>
             <LineChart
                     className='chart'
                     width={500}
@@ -40,7 +40,7 @@ const Statistics = () => {
                 </LineChart>
                 
             </div >
-            <div className=' md:hidden mt-5 mb-10'>
+            <div className='flex justify-center items-center md:hidden mt-5 mb-10'>
             <LineChart
                     className='chart'
                     width={300}
