@@ -21,10 +21,12 @@ const Question = ({ question, correctAnswer }) => {
         <div className='flex justify-between items-center'>
             <h3 className='text-[17px] font-semibold py-4 text-gray-700'> {question}
             </h3>
-            <button onClick={() => handleAddToast()}>
-                <EyeIcon className='inline h-6 w-6 text-blue-500'></EyeIcon>
+            <div>
+                <button onClick={() => handleAddToast()}>
+                    <EyeIcon className='inline h-6 w-6 text-blue-500'></EyeIcon>
+                </button>
                 <ToastContainer />
-            </button>
+            </div>
         </div>
     );
 };

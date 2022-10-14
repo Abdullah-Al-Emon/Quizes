@@ -22,7 +22,7 @@ const Option = ({ option, correctAnswer }) => {
         draggable: true,
         progress: undefined,
         theme: "light",
-        });
+    });
     const handleRigth = () => {
         if (option === correctAnswer) {
             notify()

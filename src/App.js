@@ -16,11 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home/>
+        element: <Home />
       },
       {
         path: '/home',
-        element: <Home/>
+        element: <Home />
       },
       {
         path: '/cards',
@@ -29,17 +29,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/card/:cardId',
-        loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.cardId}`),
-        element: <Quizs/>
+        loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.cardId}`),
+        element: <Quizs />
       },
       {
         path: '/statistics',
         loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
-        element: <Statistics/>
+        element: <Statistics />
       },
       {
         path: '/blog',
-        element: <Blog/>
+        element: <Blog />
       }
     ]
   }
