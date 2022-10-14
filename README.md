@@ -1,6 +1,6 @@
 # QUIZZES
 
-Live Website: [Quizzes](https://github.com/facebook/create-react-app).
+Live Website: [Quizzes](https://venerable-meringue-ae2aa6.netlify.app/).
 
 ## Header
 
