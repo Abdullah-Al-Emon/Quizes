@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Option = ({ option, correctAnswer }) => {
-    const notify = () => toast.success(`🦄 Wow so easy!`, {
+    const notify = () => toast.success(`🦄 Wow Rigth Answer!`, {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
